@@ -9,7 +9,7 @@
 
 - http://camel.apache.org/aws-s3.html
 
-## s3 to messaehub
+## s3 to messagehub
 
 - http://camel.apache.org/aws-s3.html
 
