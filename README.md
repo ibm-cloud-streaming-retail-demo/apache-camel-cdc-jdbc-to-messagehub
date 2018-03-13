@@ -15,9 +15,10 @@
 
 E.g. 
 
+```
 from("direct:pollEnrich").routeId("pollEnrich") 
                             .pollEnrich() 
 .simple("aws-s3://{{buckets.mybucket}}?amazonS3Client=#amazonS3Client&deleteAfterRead=false&fileName=${in.header.CamelAwsS3Key}")
                             .convertBodyTo(byte[].class) 
                             .to(...)
-
+```
